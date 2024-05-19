@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pop{
+    transition: 0.2 ease-in-out;
+}
+.pop .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 3;
+    transition: 0.2 ease-in-out;
+}
+.pop .content{
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    text-align: center;
+}
+.add{
+    z-index: 10;
+}
